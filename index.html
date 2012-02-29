@@ -13,16 +13,40 @@
         margin: 0;
         padding: 0;
       }
-      h1 {
+      header {
         text-align: center;
+        margin-top: 50px;
+      }
+      h1 {
+        display: inline-block;
         font-size: 4em;
         text-shadow: 5px 5px 5px #AAA;
+        filter: dropshadow(color=#AAA, offx=5, offy=5);
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+        margin: 50px auto;
+      }
+      h1:hover {
+        text-shadow: 0px 0px 30px #ffc;
+        filter: dropshadow(color=#ffc, offx=0, offy=0);
+        -moz-transform: scale(1.5) rotate(-5deg);
+        -webkit-transform: scale(1.5) rotate(-5deg);
+        -o-transform: scale(1.5) rotate(-5deg);
+        -ms-transform: scale(1.5) rotate(-5deg);
+        transform: scale(1.5) rotate(-5deg);
+        color: #06C;
       }
       a {
-        color: #000;
+        color: #06C;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
       }
       a:hover {
-        text-shadow: 0 0 20px #FF0;
+        color: blue;
       }
       footer {
         clear: both;
