@@ -239,6 +239,10 @@ a:link
     *zoom: 1;
 }
 
+.print-only {
+    display: none;
+}
+
 @media print
 {
     *
@@ -316,6 +320,11 @@ a:link
     h3
     {
         page-break-after: avoid;
+    }
+
+    .print-only {
+        display: block;
+        margin-top: 1in;
     }
 
 }
